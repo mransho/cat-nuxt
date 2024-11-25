@@ -2,8 +2,8 @@
   <div
     class="flex items-center justify-center gap-40 bg-backgroundImage bg-center bg-cover h-svh"
   >
-    <div class="h-fit flex w-full">
-      <div class="w-1/2">
+    <div class="h-fit flex w-full flex-col lg:flex-row">
+      <div class="w-1/2 hidden lg:block">
         <div
           class="logo font-fontLOGO text-white flex justify-center text-9xl font-extrabold"
         >
@@ -45,11 +45,17 @@
         </div>
       </div>
 
-      <div class="w-1/2 text-white">
+      <div
+        class="logo text-8xl font-fontLOGO flex lg:hidden text-white justify-center sm:text-9xl font-extrabold"
+      >
+        CAT
+      </div>
+
+      <div class="lg:w-1/2 text-white">
         <div
           class="w-fit flex gap-3 mx-auto flex-col p-10 rounded-3xl bg-log bg-opacity-40 backdrop-blur-log border border-white"
         >
-          <div class="flex gap-4 w-80">
+          <div class="flex gap-4 w-full  sm:w-80 ">
             <div class="border-b-2 h-12 mb-2 border-white w-1/2 relative group">
               <span
                 class="-z-10 absolute top-1/2 left-0 -translate-y-1/2 font-bold ml-2 transition-all group-focus-within:top-3 group-oninput"
@@ -86,7 +92,7 @@
             </div>
           </div>
 
-          <div class="border-b-2 h-12 mb-2 border-white w-80 relative group">
+          <div class="border-b-2 h-12 mb-2 border-white w-full  sm:w-80  relative group">
             <span
               class="-z-10 absolute top-1/2 left-0 -translate-y-1/2 font-bold ml-2 transition-all group-focus-within:top-3 group-oninput"
               :class="user.MobileNumber ? 'top-3' : ''"
@@ -103,7 +109,7 @@
             </div>
           </div>
 
-          <div class="border-b-2 h-12 mb-2 border-white w-80 relative group">
+          <div class="border-b-2 h-12 mb-2 border-white w-full  sm:w-80  relative group">
             <span
               class="-z-10 absolute top-1/2 left-0 -translate-y-1/2 font-bold ml-2 transition-all group-focus-within:top-3 group-oninput"
               :class="user.Email ? 'top-3' : ''"
@@ -120,7 +126,7 @@
             </div>
           </div>
 
-          <div class="border-b-2 h-12 mb-2 border-white w-80 relative group">
+          <div class="border-b-2 h-12 mb-2 border-white w-full  sm:w-80  relative group">
             <span
               class="-z-10 absolute top-1/2 left-0 -translate-y-1/2 font-bold ml-2 transition-all group-focus-within:top-3 group-oninput"
               :class="user.Password ? 'top-3' : ''"
@@ -137,7 +143,7 @@
             </div>
           </div>
 
-          <div class="flex gap-4 w-80">
+          <div class="flex gap-4 w-full  sm:w-80 ">
             <div class="border-b-2 h-12 mb-2 border-white w-1/3 relative group">
               <span
                 class="-z-10 absolute left-1/2 transform -translate-x-1/2 font-bold transition-all group-focus-within:top-0 group-oninput"
@@ -187,7 +193,7 @@
             </div>
           </div>
 
-          <div class="border-b-2 h-12 mb-2 border-white w-80 relative group">
+          <div class="border-b-2 h-12 mb-2 border-white w-full  sm:w-80  relative group">
             <span
               class="-z-10 absolute top-1/2 left-0 -translate-y-1/2 font-bold ml-2 transition-all group-focus-within:top-3 group-oninput"
               :class="user.Gender ? 'top-2' : ''"
@@ -200,7 +206,7 @@
           </div>
 
           <div
-            class="h-14 w-80 relative bg-slate-700 bg-opacity-90 hover:bg-slate-600 text-white flex justify-center items-center rounded-2xl"
+            class="h-14 w-full  sm:w-80  relative bg-slate-700 bg-opacity-90 hover:bg-slate-600 text-white flex justify-center items-center rounded-2xl"
           >
             <button class="w-full h-full font-bold text-xl">
               <nuxt-link
@@ -214,7 +220,7 @@
           <hr />
 
           <div
-            class="w-80 relative bg-transparent text-white flex justify-center items-center rounded-2xl"
+            class="w-full  sm:w-80  relative bg-transparent text-white flex justify-center items-center rounded-2xl"
           >
             <button class="w-full h-full font-bold text-xl">
               <nuxt-link

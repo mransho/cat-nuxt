@@ -3,37 +3,57 @@
     <navbar />
 
     <div
-      class="flex mt-4 w-100 max-w-5xl mx-auto bg-white border border-gray-200 rounded-3xl"
+      class="flex flex-col h-auto mt-4 w-100 max-w-5xl mx-auto bg-white border border-gray-200 rounded-3xl relative"
     >
-      <div class="img bg-red-300 w-full h-60 md:h-96 relative rounded-t-3xl">
+      <div
+        class="img bg-red-300 w-full h-52 md:h-auto overflow-hidden relative rounded-t-3xl"
+      >
         <img
           src="../public/cover.png"
           alt=""
           class="w-full h-full object-cover rounded-t-3xl"
         />
+      </div>
 
-        <div
-          class="bg-white h-40 md:h-28 flex items-end md:items-center md:justify-end font-bold text-2xl shadow-lg rounded-b-3xl"
-        >
-          <div class="w-full md:w-3/4 flex">
-            <div
-              class="mb-6 md:mb-0 text-black text-center md:text-start md:pl-5"
-            >
-              <div>Mahmoud Mostafa</div>
-              <div class="font-semibold text-sm text-gray-400">
-                278K followers • 0 following
-              </div>
+      <div
+        class="info bg-white h-48 md:h-28 flex items-end md:items-center md:justify-end font-bold text-2xl shadow-lg rounded-b-3xl"
+      >
+        <div class="w-full md:w-3/4 flex flex-col md:flex-row justify-between">
+          <div
+            class="mb-6 md:mb-0 text-black text-center md:text-start md:pl-5"
+          >
+            <div>Mahmoud Mostafa</div>
+            <div class="font-semibold text-sm text-gray-400">
+              278K followers • 0 following
             </div>
-            <div>sssssssss</div>
+          </div>
+          <div
+            class="flex items-center justify-evenly gap-3 font-semibold text-sm mb-3 mr-2"
+          >
+            <div class="flex items-center bg-gray-200 p-3 rounded-xl">
+              <span class="flex items-center gap-1 md:gap-0 lg:gap-1"
+                >Add Friend<i class="bx bxs-user-plus"></i
+              ></span>
+            </div>
+            <div class="flex items-center bg-gray-200 p-3 rounded-xl">
+              <span class="flex items-center gap-1"
+                >search<i class="bx bx-search"></i
+              ></span>
+            </div>
+            <div class="flex items-center bg-gray-200 p-3 rounded-xl">
+              <span class="flex items-center gap-1"
+                >message<i class="bx bxl-messenger"></i
+              ></span>
+            </div>
           </div>
         </div>
-
-        <img
-          src="../public/x.jpg"
-          alt=""
-          class="w-1/4 min-w-28 absolute -bottom-1/3 z-10 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-5 rounded-full border-4 border-white"
-        />
       </div>
+
+      <img
+        src="../public/x.jpg"
+        alt=""
+        class="w-1/4 min-w-28 absolute bottom-1/3 md:bottom-0 z-10 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-5 rounded-full border-4 border-white"
+      />
     </div>
 
     <div

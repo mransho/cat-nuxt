@@ -110,7 +110,6 @@ const toggleComments = (event) => {
 <style scoped>
 ::-webkit-scrollbar {
   width: 5px;
-  /* background: red; */
 }
 
 ::-webkit-scrollbar-track {
